@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Open+Sans:wght@400;500;700&display=swap');
+:root{
+
+  --secondary-color: #1F1764;
+  --secondary-ps-color: #766786;
+  --primary-color: #7E6983;
+  --third-tp-color: #8D8A9A;
+  --third-color: #F0F2F1;
+
+  --primary: #7e6983;
+  --info: #1f1764;
+  --success: #5b9a5f;
+  --warning: #d88a27;
+  --danger: #f44336;
+
+  --white: rgba(255,255,255,0.84)
+}
+
+#root{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  gap: 10px 0;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-family: 'Noto Sans', sans-serif;
+}
+.titulo{
+  text-align: center;
+  width: 100%;
+}
+
+
+
+.log{
+  width: 50%;
+  text-align: left;
+  padding-left: 25px;
+}
+.log-acciones{
+    margin-top: 10px;
+}
+.log-acciones-registro{
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 5px;
+    padding: 5px;
+}
+.caja-accion{
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 3px;
+  font-size: 12px;
+}
+.juego{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px 0;
+  width: 50%;
+
+}
+
+@media(max-width: 700px){
+  #root{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .log-acciones{
+    display: none;
+  }
+  .log-ranking{
+    text-align: center;
+  }
+  .juego{
+    width: 100%;
+  }
+
+}
+
